@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>生鮮購物網－結帳</h1>
+        <h3>購買內容：</h3>
+        <h3>支付方式：
+        <select>
+            <option value="value1">現金</option>
+            <option value="value2">信用卡</option>
+        </select>
+        </h3>
+        <h3>支付金額：</h3>
+        <h3>送貨地點：<input type="text" name="text"  style="width:400px;" placeholder="請輸入地址"></h3>
+        <h3>備註：<p><textarea style="width:300px; height:100px;" name="remark"></textarea></p></h3>
+        <input class="popuptest" type="button" onclick="history.back()" value="確定">
+        <p class="show"></p>
+        <script>
+            var button = document.querySelector('.popuptest');
+            var showtxt = document.querySelector('.show');
+            function popup2(e){
+                window.confirm('購買成功！')
+            };
+            button.addEventListener('click', popup2)
+        </script>
+    </body>
+</html>
